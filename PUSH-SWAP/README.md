@@ -1,3 +1,5 @@
+![Demo](DEMO.gif)
+
 ## ABOUT
 
 PUSH_SWAP is a sorting algorithm project written in C as part of the 42 curriculum. The goal of this project is to understand ALGORITHMIC COMPLEXITY, DATA STRUCTURES, and OPTIMIZATION under strict constraints.
@@ -8,8 +10,7 @@ This project consists of sorting a list of integers using TWO STACKS and a LIMIT
 
 The project follows the official SUBJECT and respects THE NORM coding standard.
 
-SUBJECT: pushswap.pdf
-NORMINETTE: norm.pdf
+SUBJECT: [subject.pdf](./pushswap.pdf)
 
 ## INSTALLATION & USAGE
 
