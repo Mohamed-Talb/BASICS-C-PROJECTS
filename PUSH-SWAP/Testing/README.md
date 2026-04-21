@@ -142,7 +142,19 @@ failing_cases/
 
 
 
-This tester checks ERROR HANDLING and SORTING CORRECTNESS.
+This tester is a SHELL SCRIPT designed to QUICKLY validate your `push_swap`.
+
+
+
+It focuses on:
+
+
+
+- ERROR HANDLING
+
+- BASIC PROGRAM VALIDATION
+
+- QUICK SORT CHECKS
 
 
 
@@ -152,11 +164,15 @@ This tester checks ERROR HANDLING and SORTING CORRECTNESS.
 
 - `push_swap` executable
 
-- `pro_checker` executable
+- `tester.sh` script
 
 
 
-Both must be in the SAME DIRECTORY.
+### IMPORTANT NOTE
+
+
+
+The tester SCRIPT,  `push_swap` EXECUTABLE and CHECKER must be in the SAME DIRECTORY.
 
 
 
@@ -170,21 +186,19 @@ push_swap/
 
 ├── push_swap
 
-├── pro_checker
-
 ├── tester.sh
 
 ```
 
 
 
-Give permissions if needed:
+Give execution permission if needed:
 
 
 
 ```bash
 
-chmod +x push_swap pro_checker tester.sh
+chmod +x push_swap tester.sh
 
 ```
 
@@ -194,7 +208,7 @@ chmod +x push_swap pro_checker tester.sh
 
 
 
-#### 1. ERROR TESTS
+### 1. ERROR TESTS
 
 
 
@@ -206,15 +220,7 @@ chmod +x push_swap pro_checker tester.sh
 
 
 
-Checks invalid inputs (letters, wrong format, etc.)
-
-
-
-Expected: `Error`
-
-
-
-#### 2. RANDOM VALIDATION
+### 2. RANDOM TEST
 
 
 
@@ -226,15 +232,7 @@ Expected: `Error`
 
 
 
-- Generates RANDOM NUMBERS
-
-- Runs `push_swap`
-
-- Validates using `pro_checker`
-
-
-
-#### 3. CUSTOM INPUT TEST
+### 3. CUSTOM INPUT
 
 
 
@@ -246,7 +244,9 @@ Expected: `Error`
 
 
 
-Runs your program with your own input.
+- Runs your program with your own input
+
+- Useful for debugging specific cases
 
 
 
@@ -258,7 +258,7 @@ Runs your program with your own input.
 
 - `[KO]` → incorrect behavior
 
-- Colored output for readability
+- Colored logs for readability
 
 
 
@@ -272,8 +272,8 @@ Use BOTH testers together:
 
 - PYTHON TESTER → optimize PERFORMANCE
 
-- BASH TESTER → validate CORRECTNESS
+- BASH TESTER → validate LOGIC & ERRORS
 
 
 
-This combination ensures your `push_swap` is BOTH FAST and CORRECT.
+This ensures your `push_swap` is FAST, CLEAN, and RELIABLE.
