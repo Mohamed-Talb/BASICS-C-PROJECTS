@@ -111,4 +111,4 @@ int main(void)
 * `man printf`
 * `man stdarg`
 * [https://en.cppreference.com/w/c/variadic](https://en.cppreference.com/w/c/variadic)
-* FT_PRINTF SUBJECT
+* ft_printf SUBJECT
