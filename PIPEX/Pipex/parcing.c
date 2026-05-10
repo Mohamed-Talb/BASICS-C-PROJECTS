@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parcing.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mtaleb <mtaleb@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/06 09:16:47 by mtaleb            #+#    #+#             */
+/*   Updated: 2025/03/14 14:00:05 by mtaleb           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "pipex.h"
 
@@ -22,15 +33,15 @@ static char	*getcommand(char *av)
 
 static char	**getflags(char *av)
 {
-	int		i;
+	// int		i;
 	char	**ptr;
 	char	**flags;
 
-	i = 0;
+	// i = 0;
 	ptr = getargs(av);
 	if (!ptr || !ptr[0])
 		return (NULL);
-	i = ft_strlen2(ptr);
+	// i = ft_strlen2(ptr);
 	flags = ft_strdup2(ptr);
 	ft_freedouble(&ptr);
 	return (flags);

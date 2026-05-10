@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mtaleb <mtaleb@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/07 17:06:05 by mtaleb            #+#    #+#             */
+/*   Updated: 2025/03/14 14:24:50 by mtaleb           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "pipex.h"
 
@@ -48,7 +59,7 @@ static void	getabspaths(t_info *info, int i)
 
 void	check(t_info *info, int i)
 {
-	(1) && (info->permission = false, info->found = false);
+	info->permission = false, info->found = false;
 	getabspaths(info, 0);
 	if (!info->paths || !info->paths[0])
 		displayerrors(info, "memory allocation faild\n", 1);
